@@ -20,6 +20,21 @@
       <excludes>
         <exclude>domain.*</exclude>
       </excludes>
+      <includes>
+        <include>*.sh</include>
+      </includes>
+      <fileMode>755</fileMode>
+      <lineEnding>keep</lineEnding>
+      <outputDirectory>${distro.root.dir}bin</outputDirectory>
+    </fileSet>
+    <fileSet>
+      <directory>${stagging.dir}/jboss-${version.jbossas}/bin</directory>
+      <excludes>
+        <exclude>domain.*</exclude>
+        <exclude>*.sh</exclude>
+      </excludes>
+      <fileMode>644</fileMode>
+      <lineEnding>keep</lineEnding>
       <outputDirectory>${distro.root.dir}bin</outputDirectory>
     </fileSet>
     <fileSet>
